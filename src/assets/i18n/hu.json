@@ -1,0 +1,14 @@
+{
+    "Id": "Azonosító",
+    "Name": "Név",
+    "Price": "Ár",
+    "Category": "Kategória",
+    "Description": "Leírás",
+    "Actions": "Műveletek",
+    "Modify": "Módosítás",
+    "Delete": "Törlés",
+    "Create": "Hozzáadás",
+    "Save changes": "Mentés",
+    "Close": "Bezárás",
+    "Edit Product": "Termék szerkesztés"
+}

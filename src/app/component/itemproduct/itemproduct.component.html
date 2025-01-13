@@ -1,0 +1,86 @@
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">{{"Id"| translate}}</th>
+        <th scope="col">{{"Name"| translate}}</th>
+        <th scope="col">{{"Price"| translate}}</th>
+        <th scope="col">{{"Category"| translate}}</th>
+        <th scope="col">{{"Description"| translate}}</th>
+        <th scope="col">{{"Actions"| translate}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }} Ft</td>
+        <td>{{ product.category }}</td>
+        <td>{{ product.description }}</td>
+        <td>
+          <button class="btn btn-primary" (click)="setEditProduct()">{{"Modify"| translate}}</button>
+          <button class="btn btn-danger" (click)="deleteProduct()">{{"Delete"| translate}}</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+    <div *ngIf="editProduct" class="modal fade show d-block" tabindex="-1" style="background: rgba(0, 0, 0, 0.5);">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{"Edit Product"| translate}}</h5>
+            <button type="button" class="btn-close" (click)="setEditProduct()" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form (ngSubmit)="modifyProduct()">
+              <div class="form-group">
+                <label for="edit-name">{{"Name"| translate}}</label>
+                <input
+                  id="edit-name"
+                  class="form-control"
+                  [(ngModel)]="modifiedProduct.name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="edit-category">{{"Category"| translate}}</label>
+                <input
+                  id="edit-category"
+                  class="form-control"
+                  [(ngModel)]="modifiedProduct.category"
+                  name="category"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="edit-description">{{"Description"| translate}}</label>
+                <textarea
+                  id="edit-description"
+                  class="form-control"
+                  [(ngModel)]="modifiedProduct.description"
+                  name="description"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="edit-price">{{"Price"| translate}}</label>
+                <input
+                  id="edit-price"
+                  class="form-control"
+                  type="number"
+                  [(ngModel)]="modifiedProduct.price"
+                  name="price"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="setEditProduct(); resetNewProduct()">{{"Close"| translate}}</button>
+            <button type="button" class="btn btn-primary" (click)="modifyProduct()">{{"Save changes"| translate}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  

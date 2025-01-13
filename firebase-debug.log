@@ -1,0 +1,28 @@
+[debug] [2025-01-13T21:49:39.230Z] ----------------------------------------------------------------------
+[debug] [2025-01-13T21:49:39.233Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cinti\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-01-13T21:49:39.233Z] CLI Version:   13.29.1
+[debug] [2025-01-13T21:49:39.233Z] Platform:      win32
+[debug] [2025-01-13T21:49:39.233Z] Node Version:  v22.11.0
+[debug] [2025-01-13T21:49:39.233Z] Time:          Mon Jan 13 2025 22:49:39 GMT+0100 (közép-európai téli idő)
+[debug] [2025-01-13T21:49:39.234Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-13T21:49:39.240Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-13T21:49:39.240Z] > authorizing via signed-in user (cintia.525.kiss@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\cinti\OneDrive\Asztali gép\2024-25\jagerattila\dolgozatWebshop
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 

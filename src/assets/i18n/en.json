@@ -1,0 +1,14 @@
+{
+    "Id": "Id",
+    "Name": "Name",
+    "Price": "Price",
+    "Category": "Category",
+    "Description": "Description",
+    "Actions": "Actions",
+    "Modify": "Modify",
+    "Delete": "Delete",
+    "Create": "Create",
+    "Save changes": "Save changes",
+    "Close": "Close",
+    "Edit Product": "Edit Product"
+}
