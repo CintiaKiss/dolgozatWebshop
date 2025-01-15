@@ -39,7 +39,6 @@ setEditProduct() {
   }
 
   ngOnInit(): void {
-    //this.loadProducts();
       
     }
   
@@ -49,7 +48,6 @@ setEditProduct() {
       this.db.addProduct(this.product).subscribe(
         data => {
           console.log('Termék hozzáadva', data);
-          //this.loadProducts();
         },
         error => {
           console.error('Hiba történt a termék hozzáadása közben', error);
@@ -64,7 +62,6 @@ setEditProduct() {
     this.db.updateProduct(this.modifiedProduct.id, this.modifiedProduct).subscribe(
       data => {
         console.log('Termék frissítve', data);
-        //this.loadProducts();
       },
       error => {
         console.error('Hiba történt a termék frissítésekor', error);
@@ -76,7 +73,6 @@ setEditProduct() {
     this.db.deleteProduct(this.product.id).subscribe(
       data => {
         console.log('Termék törölve', data);
-        //this.loadProducts();
       },
       error => {
         console.error('Hiba történt a termék törlésekor', error);
