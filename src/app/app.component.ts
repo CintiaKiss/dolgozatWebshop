@@ -18,9 +18,7 @@ export class AppComponent {
   constructor(
       private db: HttpService,
       private config: ConfigService,
-    ) {
-      //this.loadTitles();
-    }
+    ) {}
 
   ngOnInit(): void {
     this.loadProducts();
